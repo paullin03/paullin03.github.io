@@ -12,8 +12,8 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div style={{background: "#222222"}}>
-        <Navbar bg="dark" expand="lg" variant="dark" id="NavigationBar">
+      <div style={{background: "#03396c"}}>
+        <Navbar style={{background: "#011f4b"}} expand="lg" variant="dark" id="NavigationBar">
           <Navbar.Brand href="#AboutMe">
             Paul Lin
           </Navbar.Brand>
@@ -33,10 +33,10 @@ class App extends Component {
         </Container>
 
         <h1 id="Software">Software</h1>
-        <div style={{padding:"1.5rem"}}>
+        <div class="mainContainer">
           <Tab.Container id="SoftwareProjects" defaultActiveKey="taskOrganizer">
             <Row>
-              <Col md="auto">
+              <Col sm={2}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item>
                     <Nav.Link eventKey="taskOrganizer">Task Organizer</Nav.Link>
@@ -46,7 +46,7 @@ class App extends Component {
                   </Nav.Item>
                 </Nav>
               </Col>
-              <Col>
+              <Col sm={8}>
                 <Tab.Content>
                   <Tab.Pane eventKey="taskOrganizer">
                     {this.generateCard("Task Organizer", "Android App for Organizing Tasks", "Lorem Ipsum", "https://github.com/paullin03/TaskOrganizer")}
@@ -62,11 +62,33 @@ class App extends Component {
 
         <h1 id="Hardware">Hardware</h1>
 
-        <Container>
-          <Row>
-            {this.generateCard("Simple RISC Machine", "Turing-Complete Computer", "Lorem Ipsum", "#AboutMe")}
-          </Row>
-        </Container>
+        <div class="mainContainer">
+          <Tab.Container id="HardwareProjects" defaultActiveKey="RISCMachine">
+            <Row>
+              <Col sm={2}>
+                <Nav variant="pills" className="flex-column">
+                  <Nav.Item>
+                    <Nav.Link eventKey="RISCMachine">Simple RISC Machine</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="OS">OS</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              </Col>
+              <Col sm={8}>
+                <Tab.Content>
+                  <Tab.Pane eventKey="RISCMachine">
+                    {this.generateCard("Simple RISC Machine", "Basic Turing-complete Computer", "Lorem Ipsum", "https://github.com/paullin03/TaskOrganizer")}
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="OS">
+                    {this.generateCard("OS Implementations", "Implementations of key OS features", "Lorem Ipsum", "#AboutMe")}
+                  </Tab.Pane>
+                </Tab.Content>
+              </Col>
+            </Row>
+          </Tab.Container>
+        </div>
+
       </div>
       
     );
@@ -75,7 +97,7 @@ class App extends Component {
 
   generateCard(title, subtitle, text, href) {
     return(
-      <Card bg="light">
+      <Card style={{background: "#b3cde0"}}>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
