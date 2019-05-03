@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import ProjectCard from './ProjectCard';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div style={{background: "#03396c"}}>
+      <div style={{background: "#03396c", textAlign: "center"}}>
         <Navbar style={{background: "#011f4b"}} expand="lg" variant="dark" id="NavigationBar">
           <Navbar.Brand href="#AboutMe">
             Paul Lin
@@ -25,88 +24,67 @@ class App extends Component {
               Hardware
             </NavDropdown.Item>
           </NavDropdown>
-        </Navbar>          
-        <h1 id="AboutMe">About Me</h1>
-        <Container>
-        </Container>
-        <Container>
-        </Container>
-
-        <h1 id="Software">Software</h1>
-        <div class="mainContainer">
-          <Tab.Container id="SoftwareProjects" defaultActiveKey="taskOrganizer">
-            <Row>
-              <Col sm={2}>
-                <Nav variant="pills" className="flex-column">
-                  <Nav.Item>
-                    <Nav.Link eventKey="taskOrganizer">Task Organizer</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="apps">Apps</Nav.Link>
-                  </Nav.Item>
-                </Nav>
-              </Col>
-              <Col sm={8}>
-                <Tab.Content>
-                  <Tab.Pane eventKey="taskOrganizer">
-                    {this.generateCard("Task Organizer", "Android App for Organizing Tasks", "Lorem Ipsum", "https://github.com/paullin03/TaskOrganizer")}
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="apps">
-                    {this.generateCard("apps", "apps", "Lorem Ipsum", "#AboutMe")}
-                  </Tab.Pane>
-                </Tab.Content>
-              </Col>
-            </Row>
-          </Tab.Container>
+          <Nav.Link href="#Contact">
+            Contact
+          </Nav.Link>
+        </Navbar>
+        <div id="AboutMe"class="sectionContainer">          
+          <h1>About Me</h1>
+          <Container>
+            Lorem Ipsum
+          </Container>
+          <Container>
+          </Container>
         </div>
 
-        <h1 id="Hardware">Hardware</h1>
 
-        <div class="mainContainer">
-          <Tab.Container id="HardwareProjects" defaultActiveKey="RISCMachine">
-            <Row>
-              <Col sm={2}>
-                <Nav variant="pills" className="flex-column">
-                  <Nav.Item>
-                    <Nav.Link eventKey="RISCMachine">Simple RISC Machine</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="OS">OS</Nav.Link>
-                  </Nav.Item>
-                </Nav>
-              </Col>
-              <Col sm={8}>
-                <Tab.Content>
-                  <Tab.Pane eventKey="RISCMachine">
-                    {this.generateCard("Simple RISC Machine", "Basic Turing-complete Computer", "Lorem Ipsum", "https://github.com/paullin03/TaskOrganizer")}
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="OS">
-                    {this.generateCard("OS Implementations", "Implementations of key OS features", "Lorem Ipsum", "#AboutMe")}
-                  </Tab.Pane>
-                </Tab.Content>
-              </Col>
-            </Row>
-          </Tab.Container>
+        <div id="Software" class="sectionContainer">
+          <h1>Software</h1>
+          <div class="tabWrapper">
+            <Tabs id="SoftwareProjects" defaultActiveKey="taskOrganizer">
+                <Tab eventKey="taskOrganizer" title="Task Organizer">
+                  <ProjectCard title="Task Organizer" subtitle="Android App for helping users prioritize their tasks"/>
+                </Tab>
+                <Tab eventKey="foodCam" title="Food Cam">
+                  <ProjectCard title="Food Cam" subtitle="Android App for scanning and reading nutrition labels"
+                  text="Scan nutrition" href="https://github.com/paullin03/foodcamera_xd2019" 
+                  src={require("./images/FoodCamUse.jpg")}/>
+                </Tab>
+            </Tabs>
+          </div>
         </div>
 
+
+
+        <div id="Hardware" class="sectionContainer">
+          <h1>Hardware</h1>
+          <div class="tabWrapper">
+            <Tabs id="HardwareProjects" defaultActiveKey="RISCMachine" style={{color: "#black"}}>
+                <Tab eventKey="RISCMachine" title="Simple RISC Machine">
+                  <ProjectCard title="Task Organizer" subtitle="Android App for helping users prioritize their tasks"/>
+                </Tab>
+                <Tab eventKey="OS" title="Operating System Components">
+                  <ProjectCard title="Food Cam" subtitle="Android App for scanning and reading nutrition labels"
+                  text="Scan nutrition" href="https://github.com/paullin03/foodcamera_xd2019" 
+                  src={require("./images/FoodCamUse.jpg")}/>
+                </Tab>
+            </Tabs>
+          </div>
+        </div>
+
+        <footer id="Contact">
+          <h4>Contact</h4>
+          <a class="footerLink" href="https://www.linkedin.com/in/paul-lin-3aa17b15a/" target="_blank">
+            <img src={require("./images/linkedin.png")}/>
+          </a>
+
+          <a class="footerLink" href="https://github.com/paullin03" target="_blank">
+            <img src={require("./images/github.png")}/>
+          </a>
+
+        </footer>
       </div>
       
-    );
-  }
-
-
-  generateCard(title, subtitle, text, href) {
-    return(
-      <Card style={{background: "#b3cde0"}}>
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
-          <Card.Text>
-            {text}
-          </Card.Text>
-          <Card.Link href={href} target="_blank">GitHub Link</Card.Link>
-        </Card.Body>
-      </Card>
     );
   }
 }

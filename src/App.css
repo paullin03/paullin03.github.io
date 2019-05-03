@@ -1,10 +1,28 @@
 h1{
-  color:#b3cde0;
-  padding:2rem;
+  color:#6497b1;
+  padding-bottom: 0.5rem;
 }
 
-.mainContainer{
-  padding:2rem;
+h4{
+  color:#6497b1;
 }
 
+.sectionContainer{
+  padding-top: 2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
+.tabWrapper{
+  background: #011f4b;
+}
+
+.footerLink{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
