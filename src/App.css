@@ -7,8 +7,19 @@ h4{
   color:#6497b1;
 }
 
-.sectionContainer{
+footer{
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.body{ 
+  background: #03396c;
+  text-align: center;
+}
+.sectionContainer{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -22,7 +33,35 @@ h4{
   padding-right: 1rem;
 }
 
-footer{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+
+#bannerContainer{
+  position: relative;
+  background: white;
 }
+
+#bannerImage{
+  max-width: 100%;
+}
+
+#bannerText{ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+
+#bannerSubtext{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+

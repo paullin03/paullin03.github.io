@@ -11,7 +11,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div style={{background: "#03396c", textAlign: "center"}}>
+      <div class="body">
         <Navbar style={{background: "#011f4b"}} expand="lg" variant="dark" id="NavigationBar">
           <Navbar.Brand href="#AboutMe">
             Paul Lin
@@ -28,6 +28,17 @@ class App extends Component {
             Contact
           </Nav.Link>
         </Navbar>
+
+        <div id="bannerContainer">
+          <img id="bannerImage" src={require("./images/StanleyLandscape.jpg")}/>
+          <div id="bannerText">
+            Paul Lin
+          </div>
+          <div id="bannerSubtext">
+            3rd Year Computer Engineering Student
+          </div>
+        </div>
+
         <div id="AboutMe"class="sectionContainer">          
           <h1>About Me</h1>
           <Container>
@@ -36,7 +47,6 @@ class App extends Component {
           <Container>
           </Container>
         </div>
-
 
         <div id="Software" class="sectionContainer">
           <h1>Software</h1>
