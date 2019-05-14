@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import ProjectCard from './ProjectCard';
+import Card from 'react-bootstrap/Card';
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,9 @@ class App extends Component {
           <Navbar.Brand href="#AboutMe">
             Paul Lin
           </Navbar.Brand>
+          <Nav.Link href="#WorkExperience">
+            Work Experience
+          </Nav.Link>
           <NavDropdown title="Projects">
             <NavDropdown.Item href="#Software">
               Software
@@ -39,13 +43,29 @@ class App extends Component {
           </div>
         </div>
 
-        <div id="AboutMe"class="sectionContainer">          
+        <div id="AboutMe" class="sectionContainer">          
           <h1>About Me</h1>
-          <Container>
+          <Container style={{background: "#b3cde0"}}>
             Lorem Ipsum
           </Container>
           <Container>
           </Container>
+        </div>
+
+        <div id="WorkExperience" class="sectionContainer">
+          <h1>Work Experience</h1>
+
+          <Card style={{background: "#b3cde0"}}>
+            <Card.Body>
+                <Card.Img variant="top" src={require("./images/tasktop.png")} style={{maxWidth: "80%", height: "auto", paddingBottom: "0.5rem"}}/>
+                <Card.Title>Tasktop Technologies</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Junior Software Developer</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">May 2019 - December 2019 (8 months)</Card.Subtitle>
+                <Card.Text>
+                    Lorem Ipsum
+                </Card.Text>
+            </Card.Body>
+          </Card>
         </div>
 
         <div id="Software" class="sectionContainer">
