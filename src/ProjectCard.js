@@ -19,7 +19,10 @@ function ProjectCard(props) {
 
 function generateLink(href) {
     if (href) {
-        return (<Card.Link href={href} target="_blank">GitHub Link</Card.Link>);
+        return (
+        <a class="footerLink" href={href} target="_blank">
+            <img src={require("./images/github.png")}/>
+        </a>);
     } else {
         return;
     }

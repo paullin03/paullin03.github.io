@@ -7,6 +7,8 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import ProjectCard from './ProjectCard';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import './App.css';
 
 class App extends Component {
@@ -46,10 +48,18 @@ class App extends Component {
         <div id="AboutMe" class="sectionContainer">          
           <h1>About Me</h1>
           <Container style={{background: "#b3cde0"}}>
-            Lorem Ipsum
+            <div class="row align-items-center" id="aboutMeRow">
+              <Col xs={4}>
+                <Image src={require("./images/PaulHeadShot.jpg")} fluid />             
+              </Col>
+              <Col>
+                I am currently a 3rd year student studying Computer Engineering at UBC, with 1 term of co-op work experience.
+                I have experience with a both high-level languages such as Java, Python, and C++, as well as assembly languages like ARM
+                and x86, along with Verilog.
+              </Col>
+            </div>
           </Container>
-          <Container>
-          </Container>
+
         </div>
 
         <div id="WorkExperience" class="sectionContainer">
@@ -62,7 +72,7 @@ class App extends Component {
                 <Card.Subtitle className="mb-2 text-muted">Junior Software Developer</Card.Subtitle>
                 <Card.Subtitle className="mb-2 text-muted">May 2019 - December 2019 (8 months)</Card.Subtitle>
                 <Card.Text>
-                    Lorem Ipsum
+                  Working on sending and receiving information through REST APIs
                 </Card.Text>
             </Card.Body>
           </Card>
@@ -91,12 +101,11 @@ class App extends Component {
           <div class="tabWrapper">
             <Tabs id="HardwareProjects" defaultActiveKey="RISCMachine" style={{color: "#black"}}>
                 <Tab eventKey="RISCMachine" title="Simple RISC Machine">
-                  <ProjectCard title="Task Organizer" subtitle="Android App for helping users prioritize their tasks"/>
+                  <ProjectCard title="Simple RISC Machine" subtitle="Turing-complete Machine"/>
                 </Tab>
                 <Tab eventKey="OS" title="Operating System Components">
-                  <ProjectCard title="Food Cam" subtitle="Android App for scanning and reading nutrition labels"
-                  text="Scan nutrition" href="https://github.com/paullin03/foodcamera_xd2019" 
-                  src={require("./images/FoodCamUse.jpg")}/>
+                  <ProjectCard title="Operating System Components" subtitle="OS features such as Caches, File Systems"
+                  text="Scan nutrition" />
                 </Tab>
             </Tabs>
           </div>
