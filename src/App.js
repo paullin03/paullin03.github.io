@@ -72,7 +72,12 @@ class App extends Component {
                 <Card.Subtitle className="mb-2 text-muted">Junior Software Developer</Card.Subtitle>
                 <Card.Subtitle className="mb-2 text-muted">May 2019 - December 2019 (8 months)</Card.Subtitle>
                 <Card.Text>
-                  Working on sending and receiving information through REST APIs
+                  <ul style={{textAlign:"left"}}>
+                    <li>Collaborating with a team in an Agile fashion with daily stand-up, retrospectives, and code-reviews</li>
+                    <li>Writing production code in Java and carrying out testing by writing custom unit tests/manual testing</li>
+                    <li>Working on formatting requests and parsing payloads for various REST/SOAP APIs (ex. GitHub, Jira)</li>
+                    <li>Reviewing nightly builds and addressing test failures</li>
+                  </ul>
                 </Card.Text>
             </Card.Body>
           </Card>
@@ -83,11 +88,24 @@ class App extends Component {
           <div class="tabWrapper">
             <Tabs id="SoftwareProjects" defaultActiveKey="taskOrganizer">
                 <Tab eventKey="taskOrganizer" title="Task Organizer">
-                  <ProjectCard title="Task Organizer" subtitle="Android App for helping users prioritize their tasks"/>
+                  <ProjectCard title="Task Organizer" subtitle="Android App for helping users prioritize their tasks"
+                  text={
+                    <ul style={{textAlign:"left"}}>
+                      <li>Developed an Android task organizer using Android Studio – organizes tasks to prioritize based on deadline, importance, and time commitment</li>
+                      <li>Designed user interface for task entry in XML and utilized the Android Room Persistence Library to implement a database to store task entries</li>
+                      <li>Collaborated and communicated with 3 others through GitHub and design meetings</li>
+                    </ul>} href="https://github.com/paullin03/TaskOrganizer"
+                    src={require("./images/TaskOrganizerSummary.jpg")}/>
                 </Tab>
                 <Tab eventKey="foodCam" title="Food Cam">
                   <ProjectCard title="Food Cam" subtitle="Android App for scanning and reading nutrition labels"
-                  text="Scan nutrition" href="https://github.com/paullin03/foodcamera_xd2019" 
+                  text={
+                    <ul style={{textAlign:"left"}}>
+                      <li>Developed an Android app to take pictures of nutritional labels for automatic data entry</li>
+                      <li>Designed user interface for manual label entry</li>
+                      <li>Collaborated and communicated with 5 others to come up with design and divide tasks equally</li>
+                    </ul>
+                  } href="https://github.com/paullin03/foodcamera_xd2019" 
                   src={require("./images/FoodCamUse.jpg")}/>
                 </Tab>
             </Tabs>
@@ -101,11 +119,24 @@ class App extends Component {
           <div class="tabWrapper">
             <Tabs id="HardwareProjects" defaultActiveKey="RISCMachine" style={{color: "#black"}}>
                 <Tab eventKey="RISCMachine" title="Simple RISC Machine">
-                  <ProjectCard title="Simple RISC Machine" subtitle="Turing-complete Machine"/>
+                  <ProjectCard title="Simple RISC Machine" subtitle="Turing-complete Machine"
+                  text={
+                    <ul style={{textAlign:"left"}}>
+                      <li>Designed and coded a datapath (including register file, arithmetic logic unit, pipeline registers) and a finite-state machine controller for a Turing machine in Verilog</li>
+                      <li>Wrote test benches in Verilog and conducted simulations in ModelSim to verify correctness of modules</li>
+                      <li>Accomplished all required in-class elements, passing all auto-grader tests along with additional support for virtual functions</li>
+                      </ul>
+                  }/>
                 </Tab>
                 <Tab eventKey="OS" title="Operating System Components">
                   <ProjectCard title="Operating System Components" subtitle="OS features such as Caches, File Systems"
-                  text="Scan nutrition" />
+                  text={
+                    <ul style={{textAlign:"left"}}>
+                      <li>Implemented a software cache in C</li>
+                      <li>Implemented a FAT file system in C along with an optional component for interacting with filesystem through command line</li>
+                      <li>Simulated the operation of implicit free lists</li>
+                    </ul>
+                  }/>
                 </Tab>
             </Tabs>
           </div>
