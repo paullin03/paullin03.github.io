@@ -3,13 +3,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
-import ProjectCard from './ProjectCard';
-import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import WorkExperience from './WorkExperience';
+import Software from './Software';
+import Hardware from './Hardware';
 import './App.css';
+import RelevantCourses from './RelevantCourses';
 
 class App extends Component {
   render() {
@@ -30,6 +30,9 @@ class App extends Component {
               Hardware
             </NavDropdown.Item>
           </NavDropdown>
+          <Nav.Link href="#RelevantCourses">
+            Courses
+          </Nav.Link>
           <Nav.Link href="#Contact">
             Contact
           </Nav.Link>
@@ -59,88 +62,15 @@ class App extends Component {
               </Col>
             </div>
           </Container>
-
         </div>
 
-        <div id="WorkExperience" class="sectionContainer">
-          <h1>Work Experience</h1>
+        <WorkExperience/>
 
-          <Card style={{background: "#b3cde0"}}>
-            <Card.Body>
-                <Card.Img variant="top" src={require("./images/tasktop.png")} style={{maxWidth: "80%", height: "auto", paddingBottom: "0.5rem"}}/>
-                <Card.Title>Tasktop Technologies</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Junior Software Developer</Card.Subtitle>
-                <Card.Subtitle className="mb-2 text-muted">May 2019 - December 2019 (8 months)</Card.Subtitle>
-                <Card.Text>
-                  <ul style={{textAlign:"left"}}>
-                    <li>Collaborating with a team in an Agile fashion with daily stand-up, retrospectives, and code-reviews</li>
-                    <li>Writing production code in Java and carrying out testing by writing custom unit tests/manual testing</li>
-                    <li>Working on formatting requests and parsing payloads for various REST/SOAP APIs (ex. GitHub, Jira)</li>
-                    <li>Reviewing nightly builds and addressing test failures</li>
-                  </ul>
-                </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
+        <Software/>
 
-        <div id="Software" class="sectionContainer">
-          <h1>Software</h1>
-          <div class="tabWrapper">
-            <Tabs id="SoftwareProjects" defaultActiveKey="taskOrganizer">
-                <Tab eventKey="taskOrganizer" title="Task Organizer">
-                  <ProjectCard title="Task Organizer" subtitle="Android App for helping users prioritize their tasks"
-                  text={
-                    <ul style={{textAlign:"left"}}>
-                      <li>Developed an Android task organizer using Android Studio – organizes tasks to prioritize based on deadline, importance, and time commitment</li>
-                      <li>Designed user interface for task entry in XML and utilized the Android Room Persistence Library to implement a database to store task entries</li>
-                      <li>Collaborated and communicated with 3 others through GitHub and design meetings</li>
-                    </ul>} href="https://github.com/paullin03/TaskOrganizer"
-                    src={require("./images/TaskOrganizerSummary.jpg")}/>
-                </Tab>
-                <Tab eventKey="foodCam" title="Food Cam">
-                  <ProjectCard title="Food Cam" subtitle="Android App for scanning and reading nutrition labels"
-                  text={
-                    <ul style={{textAlign:"left"}}>
-                      <li>Developed an Android app to take pictures of nutritional labels for automatic data entry</li>
-                      <li>Designed user interface for manual label entry</li>
-                      <li>Collaborated and communicated with 5 others to come up with design and divide tasks equally</li>
-                    </ul>
-                  } href="https://github.com/paullin03/foodcamera_xd2019" 
-                  src={require("./images/FoodCamUse.jpg")}/>
-                </Tab>
-            </Tabs>
-          </div>
-        </div>
+        <Hardware/>
 
-
-
-        <div id="Hardware" class="sectionContainer">
-          <h1>Hardware</h1>
-          <div class="tabWrapper">
-            <Tabs id="HardwareProjects" defaultActiveKey="RISCMachine" style={{color: "#black"}}>
-                <Tab eventKey="RISCMachine" title="Simple RISC Machine">
-                  <ProjectCard title="Simple RISC Machine" subtitle="Turing-complete Machine"
-                  text={
-                    <ul style={{textAlign:"left"}}>
-                      <li>Designed and coded a datapath (including register file, arithmetic logic unit, pipeline registers) and a finite-state machine controller for a Turing machine in Verilog</li>
-                      <li>Wrote test benches in Verilog and conducted simulations in ModelSim to verify correctness of modules</li>
-                      <li>Accomplished all required in-class elements, passing all auto-grader tests along with additional support for virtual functions</li>
-                      </ul>
-                  }/>
-                </Tab>
-                <Tab eventKey="OS" title="Operating System Components">
-                  <ProjectCard title="Operating System Components" subtitle="OS features such as Caches, File Systems"
-                  text={
-                    <ul style={{textAlign:"left"}}>
-                      <li>Implemented a software cache in C</li>
-                      <li>Implemented a FAT file system in C along with an optional component for interacting with filesystem through command line</li>
-                      <li>Simulated the operation of implicit free lists</li>
-                    </ul>
-                  }/>
-                </Tab>
-            </Tabs>
-          </div>
-        </div>
+        <RelevantCourses/>
 
         <footer id="Contact">
           <h4>Contact</h4>
@@ -152,6 +82,9 @@ class App extends Component {
             <img src={require("./images/github.png")}/>
           </a>
 
+          <a class="footerLink" href="mailto:linpaul0328@gmail.com" target="_blank">
+            <img src={require("./images/email.png")}/>
+          </a>
         </footer>
       </div>
       
