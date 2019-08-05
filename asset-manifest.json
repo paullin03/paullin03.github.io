@@ -1,0 +1,21 @@
+{
+  "main.css": "/static/css/main.2986f590.chunk.css",
+  "main.js": "/static/js/main.2721ace5.chunk.js",
+  "main.js.map": "/static/js/main.2721ace5.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.ad038357.chunk.js": "/static/js/2.ad038357.chunk.js",
+  "static/js/2.ad038357.chunk.js.map": "/static/js/2.ad038357.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.f6edc93d48ef62c7a9c937b1c623f3f6.js": "/precache-manifest.f6edc93d48ef62c7a9c937b1c623f3f6.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.2986f590.chunk.css.map": "/static/css/main.2986f590.chunk.css.map",
+  "static/media/FoodCamEntry.jpg": "/static/media/FoodCamEntry.ad43061a.jpg",
+  "static/media/FoodCamSummary.jpg": "/static/media/FoodCamSummary.c71428f0.jpg",
+  "static/media/FoodCamUse.jpg": "/static/media/FoodCamUse.38790a5a.jpg",
+  "static/media/PaulHeadShot.jpg": "/static/media/PaulHeadShot.7d8a3ae0.jpg",
+  "static/media/StanleyLandscapeResize.png": "/static/media/StanleyLandscapeResize.a9620a1a.png",
+  "static/media/TaskOrganizerEntry.jpg": "/static/media/TaskOrganizerEntry.105fc791.jpg",
+  "static/media/TaskOrganizerSummary.jpg": "/static/media/TaskOrganizerSummary.0eca3bf9.jpg",
+  "static/media/tasktop.png": "/static/media/tasktop.38830a4d.png"
+}
