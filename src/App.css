@@ -43,28 +43,6 @@ footer{
   max-width: 100%;
 }
 
-#bannerText{ 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: white;
-  padding: 0.5rem;
-  font-weight: bolder;
-}
-
-#bannerSubtext{
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5rem;
-  color: white;
-  padding: 0.5rem;
-  font-weight: bold;
-}
-
 #aboutMeRow{
   padding: 1rem;
 }
