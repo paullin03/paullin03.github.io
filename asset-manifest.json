@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.580cb600.chunk.css",
-  "main.js": "/static/js/main.f67ac7c8.chunk.js",
-  "main.js.map": "/static/js/main.f67ac7c8.chunk.js.map",
+  "main.css": "/static/css/main.16a7d707.chunk.css",
+  "main.js": "/static/js/main.ec81b510.chunk.js",
+  "main.js.map": "/static/js/main.ec81b510.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.dbc02986.chunk.js": "/static/js/2.dbc02986.chunk.js",
-  "static/js/2.dbc02986.chunk.js.map": "/static/js/2.dbc02986.chunk.js.map",
+  "static/js/2.ea50156e.chunk.js": "/static/js/2.ea50156e.chunk.js",
+  "static/js/2.ea50156e.chunk.js.map": "/static/js/2.ea50156e.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.df8840cabdabd0ce0d8ee58d97ee781f.js": "/precache-manifest.df8840cabdabd0ce0d8ee58d97ee781f.js",
+  "precache-manifest.547fb95a62dbc5fca2ce2e8275598d0b.js": "/precache-manifest.547fb95a62dbc5fca2ce2e8275598d0b.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.580cb600.chunk.css.map": "/static/css/main.580cb600.chunk.css.map",
+  "static/css/main.16a7d707.chunk.css.map": "/static/css/main.16a7d707.chunk.css.map",
   "static/media/FoodCamEntry.jpg": "/static/media/FoodCamEntry.ad43061a.jpg",
   "static/media/FoodCamSummary.jpg": "/static/media/FoodCamSummary.c71428f0.jpg",
   "static/media/FoodCamUse.jpg": "/static/media/FoodCamUse.38790a5a.jpg",
@@ -17,5 +17,8 @@
   "static/media/StanleyLandscapeResize.png": "/static/media/StanleyLandscapeResize.a9620a1a.png",
   "static/media/TaskOrganizerEntry.jpg": "/static/media/TaskOrganizerEntry.105fc791.jpg",
   "static/media/TaskOrganizerSummary.jpg": "/static/media/TaskOrganizerSummary.0eca3bf9.jpg",
-  "static/media/tasktop.png": "/static/media/tasktop.38830a4d.png"
+  "static/media/bfsrain.gif": "/static/media/bfsrain.24ab2c27.gif",
+  "static/media/dfsrain.gif": "/static/media/dfsrain.c8d0c0d9.gif",
+  "static/media/tasktop.png": "/static/media/tasktop.38830a4d.png",
+  "static/media/website.png": "/static/media/website.7507a775.png"
 }
