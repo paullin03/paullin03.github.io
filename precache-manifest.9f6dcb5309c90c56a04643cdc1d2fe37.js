@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/static/media/dfsrain.c8d0c0d9.gif"
   },
   {
-    "revision": "2064c2609b87aa5237d9a34f3af14535",
+    "revision": "12b8bb7712f3c6e6b9ccb69cb90a6c16",
     "url": "/index.html"
   }
 ];
