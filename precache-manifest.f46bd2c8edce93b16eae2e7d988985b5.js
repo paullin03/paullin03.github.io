@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/TaskOrganizerEntry.105fc791.jpg"
   },
   {
-    "revision": "3daae831bbb7fa2bc065",
-    "url": "/static/css/main.16a7d707.chunk.css"
+    "revision": "2e3430197abde25a81df",
+    "url": "/static/css/main.580cb600.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "7145d1584d8947babd19",
-    "url": "/static/js/2.ea50156e.chunk.js"
+    "revision": "5de3ae7c2eb49f0e232f",
+    "url": "/static/js/2.7c447f62.chunk.js"
   },
   {
     "revision": "a9620a1a571fac06b47f953dc79ddacb",
@@ -24,16 +24,12 @@ self.__precacheManifest = [
     "url": "/static/media/PaulHeadShot.6d01377e.jpg"
   },
   {
-    "revision": "38830a4d0edd2e110f0b9952bbb08be8",
-    "url": "/static/media/tasktop.38830a4d.png"
-  },
-  {
     "revision": "0eca3bf988080e8e6ef5d3d88dd981be",
     "url": "/static/media/TaskOrganizerSummary.0eca3bf9.jpg"
   },
   {
-    "revision": "3daae831bbb7fa2bc065",
-    "url": "/static/js/main.ec81b510.chunk.js"
+    "revision": "2e3430197abde25a81df",
+    "url": "/static/js/main.96409457.chunk.js"
   },
   {
     "revision": "38790a5a586aabcbc0f3e4b30af5c89d",
@@ -60,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/dfsrain.c8d0c0d9.gif"
   },
   {
-    "revision": "12b8bb7712f3c6e6b9ccb69cb90a6c16",
+    "revision": "29477bba82b031f17d68e4fc4723dc9f",
     "url": "/index.html"
   }
 ];
