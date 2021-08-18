@@ -1,35 +1,35 @@
 self.__precacheManifest = [
   {
-    "revision": "105fc7919fd4d1fdcfdc5161483a57f7",
-    "url": "/static/media/TaskOrganizerEntry.105fc791.jpg"
+    "revision": "f2e02ad9c3fbbd12f2a6",
+    "url": "/static/css/main.8686d3dd.chunk.css"
   },
   {
-    "revision": "2e3430197abde25a81df",
-    "url": "/static/css/main.580cb600.chunk.css"
+    "revision": "f2e02ad9c3fbbd12f2a6",
+    "url": "/static/js/main.5ace3e06.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "5de3ae7c2eb49f0e232f",
-    "url": "/static/js/2.7c447f62.chunk.js"
+    "revision": "9176e6a0b8b8e360fcb5",
+    "url": "/static/js/2.018598ff.chunk.js"
   },
   {
-    "revision": "a9620a1a571fac06b47f953dc79ddacb",
-    "url": "/static/media/StanleyLandscapeResize.a9620a1a.png"
+    "revision": "a8a057a321ca5fff4cf2d1c0eea6d0b3",
+    "url": "/static/media/StanleyLandscapeResize.a8a057a3.jpg"
   },
   {
-    "revision": "6d01377e64a5a29eb7beae553001ab34",
-    "url": "/static/media/PaulHeadShot.6d01377e.jpg"
+    "revision": "fb75e7b7983f5a7b01d77c9735097721",
+    "url": "/static/media/PaulHeadShot.fb75e7b7.jpeg"
   },
   {
     "revision": "0eca3bf988080e8e6ef5d3d88dd981be",
     "url": "/static/media/TaskOrganizerSummary.0eca3bf9.jpg"
   },
   {
-    "revision": "2e3430197abde25a81df",
-    "url": "/static/js/main.96409457.chunk.js"
+    "revision": "105fc7919fd4d1fdcfdc5161483a57f7",
+    "url": "/static/media/TaskOrganizerEntry.105fc791.jpg"
   },
   {
     "revision": "38790a5a586aabcbc0f3e4b30af5c89d",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/dfsrain.c8d0c0d9.gif"
   },
   {
-    "revision": "29477bba82b031f17d68e4fc4723dc9f",
+    "revision": "657ea58d7868487ca1f0a3578e148a6e",
     "url": "/index.html"
   }
 ];
