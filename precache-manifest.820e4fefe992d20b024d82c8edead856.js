@@ -1,23 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f2e02ad9c3fbbd12f2a6",
+    "revision": "28aabc9f411dad729bbe",
     "url": "/static/css/main.8686d3dd.chunk.css"
   },
   {
-    "revision": "f2e02ad9c3fbbd12f2a6",
-    "url": "/static/js/main.5ace3e06.chunk.js"
+    "revision": "28aabc9f411dad729bbe",
+    "url": "/static/js/main.8acd7f92.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "9176e6a0b8b8e360fcb5",
-    "url": "/static/js/2.018598ff.chunk.js"
-  },
-  {
-    "revision": "a8a057a321ca5fff4cf2d1c0eea6d0b3",
-    "url": "/static/media/StanleyLandscapeResize.a8a057a3.jpg"
+    "revision": "5a200bb99addea8d4e53",
+    "url": "/static/js/2.c0dad67d.chunk.js"
   },
   {
     "revision": "fb75e7b7983f5a7b01d77c9735097721",
@@ -56,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/dfsrain.c8d0c0d9.gif"
   },
   {
-    "revision": "657ea58d7868487ca1f0a3578e148a6e",
+    "revision": "cc7fe9fa040a5c50c1f86d10bc3c1e62",
     "url": "/index.html"
   }
 ];
